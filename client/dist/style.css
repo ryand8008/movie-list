@@ -1,3 +1,12 @@
 body {
   font-family: sans-serif, arial;
 }
+
+.title {
+  font-size: large;
+}
+div .movie {
+  background-color: grey;
+  width: 300px;
+  border: 15px black;
+}
