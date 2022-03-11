@@ -5,17 +5,18 @@ class Search extends React.Component {
   constructor (props) {
     super(props);
     this.handleChange = this.handleChange.bind(this)
-    this.onSearchClick = this.onSearchClick.bind(this)
     this.state = {
-        movies: this.onSearchClick
+        movies: ''
   }
 }
 
+  // it's like a helper function!!
+  //it handles the event
+  // calls back to parent with the info
   onSearchClick(e){
     e.preventDefault();
-    this.setState({movies: e.target.value})
-    alert(this.state.movies)
 
+    this.props.onSearchClick(this.state.movies)
   }
 
   handleChange(e) {

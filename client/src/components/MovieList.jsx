@@ -4,7 +4,7 @@ var MoviesList = (props) => {
   return (
   <div>
     {props.moviesList.map(movie =>
-    <MoviesListItem movie={movie.title} />)}
+    <MoviesListItem movie={movie.title} key={movie.title} />)}
   </div>
   )
 };
